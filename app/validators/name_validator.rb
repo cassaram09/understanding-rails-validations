@@ -5,7 +5,7 @@ class NameValidator < ActiveModel::Validator
     elsif record.name.length < 5 
       record.errors.add :name, "The name isn't long enough!"
     else
-      false
+      true
     end
   end
 end
